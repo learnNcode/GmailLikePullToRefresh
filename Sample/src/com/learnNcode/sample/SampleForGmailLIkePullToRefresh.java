@@ -9,7 +9,6 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.learnNcode.gmaillikeloading.CustomView;
 import com.learnNcode.gmaillikeloading.IActionBarReset;
@@ -85,28 +84,27 @@ public class SampleForGmailLIkePullToRefresh extends Activity implements IRefres
 
 	@Override
 	public void preRefresh() {
-		Toast.makeText(SampleForGmailLIkePullToRefresh.this, "preRefresh", Toast.LENGTH_SHORT).show();
 		for(int i = 0; i < 10; i++){
 			adapter.add(i, i);
+			adapter.notifyDataSetChanged();
 		}
 		handler.postDelayed(runnable, 5000);
-		
 	}
 
 
 	@Override
 	public void postRefresh() {
-		Toast.makeText(SampleForGmailLIkePullToRefresh.this, "postRefresh", Toast.LENGTH_SHORT).show();
-	
+
 	}
 
 
 	public void addTempDummyData() {
 
 		view.startLoading();
-		
+
 		for(int i = 0; i < 10; i++){
 			adapter.add(i, i);
+			adapter.notifyDataSetChanged();
 		}
 
 		handler.postDelayed(runnable, 5000);
@@ -118,10 +116,11 @@ public class SampleForGmailLIkePullToRefresh extends Activity implements IRefres
 		@Override
 		public void run() {
 
-			
-			adapter.notifyDataSetChanged();
-			view.stopLoading();		
-			
+
+			view.getListView().invalidate();
+			view.getListView().requestLayout();
+			view.stopLoading();	
+
 		}
 	};
 
