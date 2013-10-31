@@ -17,8 +17,11 @@ Usage
 
 Check the attached demo sample app.
     
+Dependency
+==============
+ Works with actionbar only.
     
- License
+License
 ======
 
     Copyright 2013 learnNcode (learnncode@gmail.com)
