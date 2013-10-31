@@ -19,7 +19,7 @@ Check the attached demo sample app.
     
 Dependency
 ==============
- Works with actionbar only.
+ Works with actionbar only..
     
 License
 ======
