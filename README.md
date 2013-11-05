@@ -16,6 +16,31 @@ Usage
 =====
 
 Check the attached demo sample app.
+
+*Steps for usage.
+
+1] Here is the code snippet
+
+    CustomView view = new CustomView(getApplicationContext(), actionBar);
+    setContentView(view);
+    view.setRefreshListner(SampleForGmailLIkePullToRefresh.this);
+    view.setActionBar(SampleForGmailLIkePullToRefresh.this); //
+    view.getListView().setAdapter(new DummyAdapter(this));  //set adapter to list.
+
+ 
+
+You can implement IRefreshListner interface which has two methods preRefresh() & postRefresh() which will be invoked when loading starts and stops respectively.
+
+You can use these methods to write logic which will be executed before and after refreshing.
+
+Little more about CustomView class
+
+We have exposed following  useful methods of CustomView class.
+
+    startLoading()  to start refreshing/loading explicitly.
+    stopLoading()  to stop refreshing/loading explicitly.
+    getListView()  this will return listview.
+
     
 Dependency
 ==============
@@ -41,6 +66,6 @@ License
 Thank You
 ========
 
-  If you like my work say a hi :)
+  If you like our work say a hi :)
   <br>
   Happy Coding Happy Learning.
