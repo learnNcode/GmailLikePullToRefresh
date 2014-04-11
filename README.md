@@ -7,9 +7,9 @@ Gmail like pull to refresh implementation.
 Screenshot
 =========
 
-![swipe down action](https://dl.dropboxusercontent.com/u/61919232/learnNcode/gmail_like_loading_swipe_down_motion.png "swipe down action")
+![swipe down action](https://dl.dropboxusercontent.com/u/61919232/learnNcode/GmailLikePullToRefresh/gmailLikeLoading.gif)
 
-![refreshing](https://dl.dropboxusercontent.com/u/61919232/learnNcode/gmail_like_loading_refreshing.png "refreshing")
+
 
 
 Usage
