@@ -16,7 +16,7 @@ ChangeLog
 =========
 Version 2.0
 
-__1]__ Bug fixses.
+__1]__ Bug fixes.
 
 __2]__ Added method  ```ActivateActionBar(boolean value)```.
 
