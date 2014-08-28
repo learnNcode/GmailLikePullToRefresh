@@ -12,6 +12,16 @@ Screenshot
 
 
 
+ChangeLog
+=========
+Version 2.0
+
+__1]__ Bug fixses.
+
+__2]__ Added method  ```ActivateActionBar(boolean value)```.
+
+__3]__ Showing loading page; If no data.
+
 Usage
 =====
 
