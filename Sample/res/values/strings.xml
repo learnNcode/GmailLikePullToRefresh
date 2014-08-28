@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SampleForGmailLIkePullToRefresh</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">SampleForGmailLikePullToRefresh</string>
+    <string name="post_refresh_method_called_text"> postRefresh() called.</string>
+    <string name="pre_refresh_method_called_text"> preRefresh() called.</string>
+    <string name="menu_show_loading_text"> Show loading</string>
+    <string name="menu_stop_loading_text"> Stop loading</string>
+    <string name="menu_add_data_text"> Add data</string>
 
 </resources>

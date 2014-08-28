@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 - learnNcode (learnncode@gmail.com)
+ * Copyright 2014 - learnNcode (learnncode@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -19,7 +19,7 @@ package com.learnNcode.gmaillikeloading;
 
 /**
  * 
- * This listner is useful to make changes before/after refreshing.
+ * This listener is useful to make changes before/after refreshing.
  *
  */
 public interface IRefreshListner {

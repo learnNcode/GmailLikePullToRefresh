@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 - learnNcode (learnncode@gmail.com)
+ * Copyright 2014 - learnNcode (learnncode@gmail.com)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -15,19 +15,22 @@
  */
 
 
-
-
 package com.learnNcode.gmaillikeloading;
 
-import android.util.Log;
+/**
+ * 
+ * 
+ *
+ */
 
-public class AppConstants {
+interface INotifyClass {
 
+	public void isProcessStart(boolean value);
 
-	public static void showLog(String tag, String message) {
-		if(BuildConfig.DEBUG){
-			Log.i(tag, message);
-			
-		}
-	}
+	public void isLoadingBarVisible(boolean value);
+	
+	public void getY(int y);
+	
+	public void showtLoading();
+
 }
