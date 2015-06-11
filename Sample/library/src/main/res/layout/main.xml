@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <com.learnNcode.gmaillikeloading.CustomListView
+        android:id="@+id/listView_gmaillikepulltorefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:id="@+id/loadingBars_gmaillikepulltorefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/loadingBarLeft_gmaillikepulltorefresh"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:layout_weight="1"
+            android:background="@drawable/progress_bg_holo_dark"
+            android:max="200"
+            android:scaleX="-1.0"
+            android:scaleY="1.0" />
+
+        <ProgressBar
+            android:id="@+id/loadingBarRight_gmaillikepulltorefresh"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:layout_weight="1"
+            android:max="200" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loadingBarInDeterminate_gmaillikepulltorefresh"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="-9dp"
+        android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal_holo"
+        android:visibility="visible" />
+
+</FrameLayout>

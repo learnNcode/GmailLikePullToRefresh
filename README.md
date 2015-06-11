@@ -14,6 +14,12 @@ Screenshot
 
 ChangeLog
 =========
+Version 2.1
+
+__1]__ Bug fixes.
+
+__2]__ Added gradle support.
+
 Version 2.0
 
 __1]__ Bug fixes.

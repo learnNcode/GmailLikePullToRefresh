@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fakeActionBar_gmaillikepulltorefresh"
+    android:animateLayoutChanges="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/swipeToRefreshText_gmaillikepulltorefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/swipe_down_to_refresh_text"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GmailLikePullToRefresh</string>
+    <string name="loading_text"> No data swipe down to refresh. </string>
+    <string name="swipe_down_to_refresh_text"> Swipe down to refresh </string>
+
+</resources>
